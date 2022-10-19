@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let size = Number(prompt("Tamaño del cuadro")); 
+
+
+        for(i=1;i<=size;i++){ //Filas
+
+            let row = '';
+
+            for(j=1;j<=size;j++){//Columnas             
+                
+
+
+                if(i%2!=0){ //Primer caracter es " "
+
+                    if(j%2!=0){
+                        row=row+" ";
+                    }else{
+                        row=row+"#"
+                    }
+
+
+                }else{//Primer caracter es #
+
+                    if(j%2!=0){
+                        row=row+"#";
+                    }else{
+                        row=row+" "
+                    }
+                }
+
+            }
+
+            console.log(row);
+
+        }
+
+
+    </script>
+</body>
+</html>
