@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countB(stringValue,letter){
+
+            let lCounter = 0;
+
+            for( let i = 0; i < (stringValue.length);i++){
+
+                if (stringValue[i] === letter){
+
+                    lCounter++;
+
+                }
+            }
+
+            return lCounter;
+
+        }
+
+        function countLetter(stringValue,letter){
+
+        let counter = countB(stringValue,letter);
+
+       
+        if (counter==0){
+            return console.log(`There's no ${letter}'s on this word array`);
+        }
+
+        return console.log(`There's ${counter} ${letter}'s on this word array`);
+        }
+    </script>
+</body>
+</html>

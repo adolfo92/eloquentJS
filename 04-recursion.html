@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function isEven(n){
+
+            console.log(n);
+
+            if (n == 0) { 
+
+                return true;}
+
+            else if (n == 1) {
+
+                return false;}
+
+            else if (n<0){
+                return console.log("Error, just pass positive integer numbers on function")
+            }
+
+            else{ return isEven(n-2); }
+
+        };
+
+
+    </script>
+    
+</body>
+</html>
