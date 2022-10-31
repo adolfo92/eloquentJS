@@ -8,34 +8,32 @@
 </head>
 <body>
     <script>
-        function countB(stringValue,letter){
+        function countB(stringValue){
 
-            let lCounter = 0;
+            return countLetter(stringValue,"B"); 
 
-            for( let i = 0; i < (stringValue.length);i++){
 
-                if (stringValue[i] === letter){
-
-                    lCounter++;
-
-                }
-            }
-
-            return lCounter;
-
-        }
+        };
 
         function countLetter(stringValue,letter){
 
-        let counter = countB(stringValue,letter);
+            let counter = 0;
 
-       
-        if (counter==0){
-            return console.log(`There's no ${letter}'s on this word array`);
-        }
+            for( let i = 0; i < (stringValue.length);i++){
 
-        return console.log(`There's ${counter} ${letter}'s on this word array`);
-        }
+
+                if (stringValue[i] === letter){
+
+                    counter++;
+                }
+            }   
+        
+            if (counter==0){
+                return console.log(`There's no ${letter}'s on this word array`);
+            }
+
+            return console.log(`There's ${counter} ${letter}'s on this word array`);
+        };
     </script>
 </body>
 </html>
